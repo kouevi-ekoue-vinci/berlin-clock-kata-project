@@ -2,46 +2,46 @@ import { berlinClock } from '../app.js';
 
 describe("getFiveHours function should return the answer for the clock", function() {
 
-    let clock = new berlinClock();
+    const clock = new berlinClock();
 
     it("getFiveHours should be return RROO when given 13" ,function(){
         
-        let result = clock.getFiveHours(13);
+        const result = clock.getFiveHours(13);
 
         expect(result).toBe('RROO')
     });
 
     it("getFiveHours should be return RRRR when given 21" ,function(){
         
-        let result = clock.getFiveHours(21);
+        const result = clock.getFiveHours(21);
 
         expect(result).toBe('RRRR')
     });
 
     it("getFiveHours should be return OOOO when given 2" ,function(){
         
-        let result = clock.getFiveHours(2);
+        const result = clock.getFiveHours(2);
 
         expect(result).toBe('OOOO')
     });
 
     it("getFiveHours should be return RRRO when given 18" ,function(){
         
-        let result = clock.getFiveHours(18);
+        const result = clock.getFiveHours(18);
 
         expect(result).toBe('RRRO')
     });
 
     it("getFiveHours should be return RROO when given 0" ,function(){
         
-        let result = clock.getFiveHours(0);
+        const result = clock.getFiveHours(0);
 
         expect(result).toBe('OOOO')
     });
 
     it("getFiveHours should be return RROO when given 24" ,function(){
         
-        let result = clock.getFiveHours(24);
+        const result = clock.getFiveHours(24);
 
         expect(result).toBe('RRRR')
     });
