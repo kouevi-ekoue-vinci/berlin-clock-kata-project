@@ -10,4 +10,39 @@ describe("getFiveHours function should return the answer for the clock", functio
 
         expect(result).toBe('RROO')
     });
+
+    it("getFiveHours should be return RRRR when given 21" ,function(){
+        
+        let result = clock.getFiveHours(21);
+
+        expect(result).toBe('RRRR')
+    });
+
+    it("getFiveHours should be return OOOO when given 2" ,function(){
+        
+        let result = clock.getFiveHours(2);
+
+        expect(result).toBe('OOOO')
+    });
+
+    it("getFiveHours should be return RRRO when given 18" ,function(){
+        
+        let result = clock.getFiveHours(18);
+
+        expect(result).toBe('RRRO')
+    });
+
+    it("getFiveHours should be return RROO when given 0" ,function(){
+        
+        let result = clock.getFiveHours(0);
+
+        expect(result).toBe('OOOO')
+    });
+
+    it("getFiveHours should be return RROO when given 24" ,function(){
+        
+        let result = clock.getFiveHours(24);
+
+        expect(result).toBe('RRRR')
+    });
 });
