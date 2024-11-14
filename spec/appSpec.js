@@ -129,8 +129,18 @@ describe("getHours function should return the answer for the clock", function() 
             expect(result).toBe('YYROOOOOOOO');
         });
 
+        it("getFiveMinutes should be return YYRYYROOOOO when given 34" ,function(){
 
+            const result = clock.getFiveMinutes(34);
 
+            expect(result).toBe('YYRYYROOOOO');
+        });
+        it("getFiveMinutes should be return YYROOOOOOOO when given 58" ,function(){
+
+            const result = clock.getFiveMinutes(58);
+
+            expect(result).toBe('YYRYYRYYRYY');
+        });
 
     });
 
