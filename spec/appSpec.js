@@ -174,4 +174,27 @@ describe("getHours function should return the answer for the clock", function() 
         });
     });
 
+    describe("BerlinClock class should return the correct representation for the clock", function() {
+        const clock = new berlinClock();
+    
+        it("getBerlinClock should return the correct representation for 00:00:00", function() {
+            const result = clock.getBerlinClock(0, 0, 0);
+            expect(result).toBe('Y\nOOOO\nOOOO\nOOOOOOOOOOO\nOOOO');
+        });
+    
+        it("getBerlinClock should return the correct representation for 13:17:01", function() {
+            const result = clock.getBerlinClock(13, 17, 1);
+            expect(result).toBe('O\nRROO\nRRRO\nYYROOOOOOOO\nYYOO');
+        });
+    
+        it("getBerlinClock should return the correct representation for 23:59:59", function() {
+            const result = clock.getBerlinClock(23, 59, 59);
+            expect(result).toBe('O\nRRRR\nRRRO\nYYRYYRYYRYY\nYYYY');
+        });
+    
+        it("getBerlinClock should return the correct representation for 24:00:00", function() {
+            const result = clock.getBerlinClock(24, 0, 0);
+            expect(result).toBe('Y\nRRRR\nRRRR\nOOOOOOOOOOO\nOOOO');
+        });
+    });
 });
