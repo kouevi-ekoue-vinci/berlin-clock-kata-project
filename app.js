@@ -58,4 +58,15 @@ export class berlinClock {
         }
         return lamps;
     }
+
+    getberlinClock(hours, minutes, seconds) {
+        return [
+            this.getSeconds(seconds),
+            this.getFiveHours(hours),
+            this.getHours(hours),
+            this.getFiveMinutes(minutes),
+            this.getSingleMinutes(minutes)
+        ].join('\n');
+    }
+
 }
