@@ -56,7 +56,12 @@ describe("getFiveHours function should return the answer for the clock", functio
             expect(result).toBe('R');
         });
 
-        
+        it("getSeconds should be return O when given 1" ,function(){
+
+            const result = clock.getSeconds(1);
+
+            expect(result).toBe('O');
+        });
 
     });
 
