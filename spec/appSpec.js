@@ -56,6 +56,8 @@ describe("getFiveHours function should return the answer for the clock", functio
             expect(result).toBe('R');
         });
 
+        
+
     });
 
 });
