@@ -14,5 +14,7 @@ export class berlinClock {
         return row;
     }
 
-    
+    getSeconds(seconds) {
+        
+    }
 }
