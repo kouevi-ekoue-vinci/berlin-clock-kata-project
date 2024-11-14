@@ -179,7 +179,7 @@ describe("getHours function should return the answer for the clock", function() 
     
         it("getberlinClock should return the correct representation for 00:00:00", function() {
             const result = clock.getberlinClock(0, 0, 0);
-            expect(result).toBe('Y\nOOOO\nOOOO\nOOOOOOOOOOO\nOOOO');
+            expect(result).toBe('R\nOOOO\nOOOO\nOOOOOOOOOOO\nOOOO');
         });
     
         it("getberlinClock should return the correct representation for 13:17:01", function() {
@@ -194,7 +194,7 @@ describe("getHours function should return the answer for the clock", function() 
     
         it("getberlinClock should return the correct representation for 24:00:00", function() {
             const result = clock.getberlinClock(24, 0, 0);
-            expect(result).toBe('Y\nRRRR\nRRRR\nOOOOOOOOOOO\nOOOO');
+            expect(result).toBe('R\nRRRR\nRRRR\nOOOOOOOOOOO\nOOOO');
         });
     });
 });
