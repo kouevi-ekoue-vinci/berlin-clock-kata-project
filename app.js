@@ -45,4 +45,17 @@ export class berlinClock {
         }
         return row;
     }
+
+    getSingleMinutes(minutes) {
+        const singleMinutes = minutes % 5;
+        let lamps = '';
+        for (let i = 0; i < 4; i++) {
+            if (i < singleMinutes) {
+                lamps += 'Y';  // 'Y' pour jaune
+            } else {
+                lamps += 'O';  // 'O' pour éteint
+            }
+        }
+        return lamps;
+    }
 }
