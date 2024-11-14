@@ -82,6 +82,26 @@ describe("getHours function should return the answer for the clock", function() 
             expect(result).toBe('RROO');
         });
 
+        it("getHours should be return ROOO when given 1" ,function(){
+
+            const result = clock.getHours(1);
+
+            expect(result).toBe('ROOO');
+        });
+
+        it("getHours should be return RRRO when given 3" ,function(){
+
+            const result = clock.getHours(3);
+
+            expect(result).toBe('RRRO');
+        });
+
+        it("getHours should be return RRRR when given 4" ,function(){
+
+            const result = clock.getHours(4);
+
+            expect(result).toBe('RRRR');
+        });
 
     });
 
