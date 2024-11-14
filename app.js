@@ -1,5 +1,5 @@
 export class berlinClock {
-    
+
     getFiveHours(hours) {
         let row = '';
         let litBlock = Math.floor(hours / 5);
@@ -13,4 +13,6 @@ export class berlinClock {
         }
         return row;
     }
+
+    
 }
