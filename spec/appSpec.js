@@ -135,7 +135,7 @@ describe("getHours function should return the answer for the clock", function() 
 
             expect(result).toBe('YYRYYROOOOO');
         });
-        it("getFiveMinutes should be return YYROOOOOOOO when given 58" ,function(){
+        it("getFiveMinutes should be return YYRYYRYYRYY when given 58" ,function(){
 
             const result = clock.getFiveMinutes(58);
 
