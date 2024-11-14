@@ -46,7 +46,7 @@ describe("getFiveHours function should return the answer for the clock", functio
         expect(result).toBe('RRRR');
     });
 
-    describe("getSeconds function should return the answer for the clock", function() {
+describe("getSeconds function should return the answer for the clock", function() {
         const clock = new berlinClock();
 
         it("getSeconds should be return R when given 2" ,function(){
@@ -69,6 +69,19 @@ describe("getFiveHours function should return the answer for the clock", functio
 
             expect(result).toBe('R');
         });
+
+    });
+
+describe("getHours function should return the answer for the clock", function() {
+        const clock = new berlinClock();
+
+        it("getHours should be return RROO when given 2" ,function(){
+
+            const result = clock.getHours(2);
+
+            expect(result).toBe('RROO');
+        });
+
 
     });
 
