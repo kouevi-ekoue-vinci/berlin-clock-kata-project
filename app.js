@@ -38,7 +38,7 @@ export class berlinClock {
 
         for (let i = 1; i <= 11; i++) {
             if (i <= litLamps) {
-                row += (i % 3 === 2) ? 'R' : 'Y';
+                row += (i % 3 === 0) ? 'R' : 'Y';
             } else {
                 row += 'O';
             }

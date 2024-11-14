@@ -108,12 +108,28 @@ describe("getHours function should return the answer for the clock", function() 
     describe("getFiveMinutes function should return the answer for the clock", function() {
         const clock = new berlinClock();
 
-        it("getFiveMinutes should be return OOOOOOOOOO when given 2" ,function(){
+        it("getFiveMinutes should be return OOOOOOOOOOO when given 2" ,function(){
 
             const result = clock.getFiveMinutes(2);
 
-            expect(result).toBe('OOOOOOOOOO');
+            expect(result).toBe('OOOOOOOOOOO');
         });
+
+        it("getFiveMinutes should be return YOOOOOOOOOO when given 6" ,function(){
+
+            const result = clock.getFiveMinutes(6);
+
+            expect(result).toBe('YOOOOOOOOOO');
+        });
+
+        it("getFiveMinutes should be return YYROOOOOOOO when given 17" ,function(){
+
+            const result = clock.getFiveMinutes(17);
+
+            expect(result).toBe('YYROOOOOOOO');
+        });
+
+
 
 
     });
