@@ -108,11 +108,11 @@ describe("getHours function should return the answer for the clock", function() 
     describe("getFiveMinutes function should return the answer for the clock", function() {
         const clock = new berlinClock();
 
-        it("getFiveMinutes should be return YOOOOOOOOOO when given 2" ,function(){
+        it("getFiveMinutes should be return OOOOOOOOOO when given 2" ,function(){
 
             const result = clock.getFiveMinutes(2);
 
-            expect(result).toBe('YOOOOOOOOOO');
+            expect(result).toBe('OOOOOOOOOO');
         });
 
 
