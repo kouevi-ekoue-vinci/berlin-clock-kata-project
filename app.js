@@ -31,4 +31,18 @@ export class berlinClock {
         }
         return row;
     }
+
+    getFiveMinutes(minutes) {
+        let litLamps = Math.floor(minutes / 5);
+        let row = '';
+
+        for (let i = 1; i <= 11; i++) {
+            if (i <= litLamps) {
+                row += (i % 3 === 0) ? 'R' : 'Y';
+            } else {
+                row += 'O';
+            }
+        }
+        return row;
+    }
 }
