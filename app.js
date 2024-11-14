@@ -15,7 +15,7 @@ export class berlinClock {
     }
 
     getSeconds(seconds) {
-        if (seconds === 2){
+        if (seconds % 2 === 0){
             return 'R'
         }else {
             return 'O'
