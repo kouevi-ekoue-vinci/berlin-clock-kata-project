@@ -145,29 +145,31 @@ describe("getHours function should return the answer for the clock", function() 
     });
 
     describe("getSingleMinutes function should return the correct representation for the clock", function() {
+        const clock = new berlinClock();
+
 
         it("getSingleMinutes should return 'OOOO' when given 0", function() {
-            const result = getSingleMinutes(0);
+            const result = clock.getSingleMinutes(0);
             expect(result).toBe('OOOO');
         });
     
         it("getSingleMinutes should return 'YOOO' when given 1", function() {
-            const result = getSingleMinutes(1);
+            const result = clock.getSingleMinutes(1);
             expect(result).toBe('YOOO');
         });
     
         it("getSingleMinutes should return 'YYOO' when given 2", function() {
-            const result = getSingleMinutes(2);
+            const result = clock.getSingleMinutes(2);
             expect(result).toBe('YYOO');
         });
     
         it("getSingleMinutes should return 'YYYO' when given 3", function() {
-            const result = getSingleMinutes(3);
+            const result = clock.getSingleMinutes(3);
             expect(result).toBe('YYYO');
         });
     
         it("getSingleMinutes should return 'YYYY' when given 4", function() {
-            const result = getSingleMinutes(4);
+            const result = clock.getSingleMinutes(4);
             expect(result).toBe('YYYY');
         });
     });
